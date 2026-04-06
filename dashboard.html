@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MTechDataSub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 flex">
+
+    <aside class="hidden lg:flex flex-col w-64 bg-blue-800 h-screen sticky top-0 text-white">
+        <div class="p-6">
+            <h1 class="text-xl font-bold italic">MTech<span class="text-orange-400">Data</span></h1>
+        </div>
+        <nav class="flex-1 px-4 space-y-2 mt-4">
+            <a href="#" class="flex items-center space-x-3 bg-blue-900 p-3 rounded-lg">
+                <i class="fa-solid fa-house w-5"></i> <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 hover:bg-blue-700 p-3 rounded-lg transition">
+                <i class="fa-solid fa-mobile-screen w-5"></i> <span>Buy Data</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 hover:bg-blue-700 p-3 rounded-lg transition">
+                <i class="fa-solid fa-phone-volume w-5"></i> <span>Buy Airtime</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 hover:bg-blue-700 p-3 rounded-lg transition">
+                <i class="fa-solid fa-wallet w-5"></i> <span>Fund Wallet</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 hover:bg-blue-700 p-3 rounded-lg transition">
+                <i class="fa-solid fa-receipt w-5"></i> <span>Transactions</span>
+            </a>
+        </nav>
+        <div class="p-4 border-t border-blue-700">
+            <a href="#" class="flex items-center space-x-3 hover:text-orange-400">
+                <i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <main class="flex-1 min-h-screen">
+        
+        <header class="bg-white border-b border-slate-200 p-4 flex justify-between items-center sticky top-0 z-10">
+            <div class="flex items-center lg:hidden">
+                <button class="text-blue-800 text-2xl mr-4"><i class="fa-solid fa-bars"></i></button>
+                <span class="font-bold text-blue-800">MTechData</span>
+            </div>
+            <div class="hidden md:block">
+                <h2 class="text-lg font-semibold text-slate-700">Welcome, John 👋</h2>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="text-right hidden sm:block">
+                    <p class="text-xs text-slate-500 uppercase font-bold">User Level</p>
+                    <p class="text-sm font-semibold text-orange-600">Smart Earner</p>
+                </div>
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold border-2 border-blue-200">
+                    JD
+                </div>
+            </div>
+        </header>
+
+        <div class="p-6 max-w-6xl mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-blue-700 to-blue-900 p-6 rounded-2xl text-white shadow-lg">
+                    <p class="text-blue-200 text-sm">Wallet Balance</p>
+                    <h3 class="text-3xl font-bold mt-1">₦24,500.00</h3>
+                    <button class="mt-4 bg-white/20 hover:bg-white/30 text-xs py-2 px-4 rounded-lg backdrop-blur-md transition">
+                        + Fund Wallet
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="text-slate-500 text-sm">Total Referral Bonus</p>
+                    <h3 class="text-3xl font-bold mt-1 text-slate-800">₦1,250.00</h3>
+                    <p class="text-green-500 text-xs mt-2 font-medium">Available for withdrawal</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="text-slate-500 text-sm">Total Transactions</p>
+                    <h3 class="text-3xl font-bold mt-1 text-slate-800">142</h3>
+                    <p class="text-slate-400 text-xs mt-2 italic font-medium">Last used: 2 hours ago</p>
+                </div>
+            </div>
+
+            <h4 class="font-bold text-slate-800 mb-4">Quick Services</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                <button class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition group text-center">
+                    <div class="bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <span class="text-sm font-medium text-slate-700">Buy Data</span>
+                </button>
+                <button class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition group text-center">
+                    <div class="bg-orange-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-orange-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span class="text-sm font-medium text-slate-700">Airtime</span>
+                </button>
+                <button class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition group text-center">
+                    <div class="bg-purple-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-purple-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <span class="text-sm font-medium text-slate-700">Electricity</span>
+                </button>
+                <button class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition group text-center">
+                    <div class="bg-red-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-red-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <span class="text-sm font-medium text-slate-700">Cable TV</span>
+                </button>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-6 border-b border-slate-100 flex justify-between items-center">
+                    <h4 class="font-bold text-slate-800">Recent Transactions</h4>
+                    <a href="#" class="text-blue-600 text-sm font-semibold hover:underline">View All</a>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold">
+                            <tr>
+                                <th class="px-6 py-4">Service</th>
+                                <th class="px-6 py-4">Amount</th>
+                                <th class="px-6 py-4">Status</th>
+                                <th class="px-6 py-4">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <tr>
+                                <td class="px-6 py-4 font-medium">MTN 1GB Data</td>
+                                <td class="px-6 py-4">₦250.00</td>
+                                <td class="px-6 py-4"><span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-bold">Successful</span></td>
+                                <td class="px-6 py-4 text-slate-500">Oct 24, 10:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium">Airtel Airtime</td>
+                                <td class="px-6 py-4">₦1,000.00</td>
+                                <td class="px-6 py-4"><span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-bold">Successful</span></td>
+                                <td class="px-6 py-4 text-slate-500">Oct 23, 04:15 PM</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium">DSTV Premium</td>
+                                <td class="px-6 py-4">₦21,000.00</td>
+                                <td class="px-6 py-4"><span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-bold">Pending</span></td>
+                                <td class="px-6 py-4 text-slate-500">Oct 23, 11:05 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
